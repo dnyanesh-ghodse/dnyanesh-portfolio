@@ -21,13 +21,17 @@
             <div class="logo">
                 &ltdnyanesh/&gt
             </div>
-            <ul>
+            
+            <ul class="nav_links" id="nav_links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#work">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
-
             </ul>
+
+            <div class="nav_icon" id="nav_icon">
+                <i class="far fa-arrow-alt-circle-down"></i>
+            </div>
             <div class="social">
                 <a href="https://www.instagram.com/dnyanesh.ghodse/">
                     <i class="fab fa-instagram"></i>
@@ -59,60 +63,85 @@
     </header>
 
     <section class="skills" id="skills">
-        <h1>Skills</h1>
-        <div class="skill html">
-            <h3>HTML</h3>
-            <div class="rate"></div>
+        <div class="skill_title">
+            <h1>Skills</h1>
         </div>
-        <div class="skill css">
-            <h3>CSS</h3>
-            <div class="rate"></div>
+        
+        <div class="skills_container">
+            <div class="skill html">
+                <h3>HTML</h3>
+                <div class="rate"></div>
+            </div>
+            <div class="skill css">
+                <h3>CSS</h3>
+                <div class="rate"></div>
+            </div>
+            <div class="skill javascript">
+                <h3>JavaScript</h3>
+                <div class="rate"></div>
+            </div>
+            <div class="skill react">
+                <h3>React.js</h3>
+                <div class="rate"></div>
+            </div>
         </div>
-        <div class="skill javascript">
-            <h3>JavaScript</h3>
-            <div class="rate"></div>
-        </div>
-        <div class="skill react">
-            <h3>React.js</h3>
-            <div class="rate"></div>
-        </div>
+        
     </section>
 
 
     <section class="projects" id="work">
-        <!-- <div class="title">
+        <div class="project_title">
             <h2>My Work</h2>
-        </div> -->
+        </div>
+        
         <div class="project_container">
             <div class="project">
                 <a href="https://dnyanesh-ghodse.github.io/music-player/">
                     <div class="one"></div>
                 </a>
+                <div class="overlay">
+                    Music
+                </div>
             </div>
             <div class="project">
                 <a href="https://dnyanesh-ghodse.github.io/form_validation/">
                     <div class="two"></div>
                 </a>
+                <div class="overlay">
+                    Form Validation
+                </div>
             </div>
             <div class="project">
                 <a href="https://dnyanesh-ghodse.github.io/Search-Contact/">
                     <div class="three"></div>
                 </a>
+                <div class="overlay">
+                    Contacts
+                </div>
             </div>
             <div class="project">
                 <a href="https://dnyanesh-ghodse.github.io/React---Tour_Blog/">
                     <div class="four"></div>
                 </a>
+               <div class="overlay">
+                    Tour Blog
+                </div>
             </div>
             <div class="project">
                 <a href="https://dnyanesh-ghodse.github.io/chatboat_ui/">
                     <div class="five"></div>
                 </a>
+                <div class="overlay">
+                    Chatbot
+                </div>
             </div>
             <div class="project">
                 <a href="https://dnyanesh-ghodse.github.io/React-review/">
                     <div class="six"></div>
                 </a>
+                <div class="overlay">
+                    Review
+                </div>
             </div>
         </div>
 
@@ -149,5 +178,8 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="app.js"></script>
 </body>
 </html>
