@@ -14,86 +14,63 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-.header{
-    width: auto;
-    /* background: #ee2; */
-}
-
 .navbar{
     width: 100%;
-    padding-top: 30px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-.navbar .logo{
-    color: #000046;
-    font-size: 30px;
-    font-weight: 600;
+    padding: 20px 10px;
 }
 
-.navbar .nav_links{
+a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav_links{
     display: flex;
     list-style-type: none;
-}
-
-.navbar ul li {
-    margin-left: 20px;
 
 }
 
-.navbar a{
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* .navbar .social{
-    display: flex;
-} */
-
-.navbar i{
-    color: slategrey;
-    font-size: 25px;
-    margin-left: 20px;
-}
-
-.nav_icon{
-    cursor: pointer;
+.ham{
     display: none;
 }
 
 @media (max-width: 768px) {
-    .nav_icon{
-        display: block;
-    }
-    .navbar .nav_links{
-        display: block;
-        position: absolute;
-        top: 12%;
-        background-color: rgba(0, 0, 0, 0.6);
-        width: 100%;
-        text-align: center;
-    }
-    .navbar .show_links{
+    .nav_links{
         display: none;
     }
-    .nav_links li{
-        margin: 20px;
-    }
-    .nav_links a{
+    .show{
+        padding-top: 20%;
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        width: 50vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
         color: #fff;
     }
-
-    .nav_links a:hover{
-        background-color: skyblue;
-        padding: 5px 60px;
-        color: tomato;
+    .show a{
+        color: blanchedalmond;
+        background-color: blueviolet;
+        margin-top: 20px;
+    }
+    .show::after{
+        content: "X";
+        width: 20px;
+        height: 20px;
+        background-color: seashell;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: black;
+    }
+    .ham{
+        display: flex;
     }
 }
-
-
-
 
 .hero{
     display: flex;
@@ -121,7 +98,7 @@ body{
 
 .hero_img img{
     float: right;
-    max-width: 80%;
+    max-width: 70%;
 }   
 
 @media (max-width: 768px) {
